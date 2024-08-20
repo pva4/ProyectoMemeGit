@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Meme - Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.14.0/dist/full.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet"> <!-- Vinculando el archivo CSS -->
+</head>
+<body class="relative">
+    <header>
+        <nav class="navbar p-4 flex justify-between items-center">
+            <div class="flex-none">
+                <span class="text-2xl font-bold">Go Meme</span>
+            </div>
+            <ul class="nav-links flex-1 flex justify-center space-x-6">
+                <li><a href="#about" class="hover:text-gray-400">About</a></li>
+                <li><a href="#tokenomics" class="hover:text-gray-400">Tokenomics</a></li>
+                <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+                <li><a href="https://t.me/yourtelegram" target="_blank" class="hover:text-gray-400">Telegram</a></li>
+                <li><a href="https://twitter.com/yourtwitter" target="_blank" class="hover:text-gray-400">Twitter</a></li>
+            </ul>
+            <div class="flex-none">
+                <a href="https://www.binance.com" target="_blank" class="btn btn-primary">Buy on Binance</a>
+            </div>
+        </nav>
+    </header>
+<!-- borrar -->
+<!-- Sección de introducción -->
+<section id="intro" class="intro-section h-screen flex flex-col items-center justify-center bg-[#CDFFD8] p-8">
+    <div class="flex items-center space-x-8 mb-8">
+        <img src="../images/monopoly.gif" alt="Monopoly Gif" class="w-1/2 max-w-md rounded-lg shadow-lg">
+        <div class="text-content max-w-lg">
+            <h2 class="text-4xl font-extrabold mb-4 text-[#8762D9] border-4 border-[#8762D9] p-4 rounded-lg">
+                Introducing Go Meme,<br> MrBeast's Fav Memecoin
+            </h2>
+        </div>
+    </div>
+    <!-- Nuevo texto y espaciador -->
+    <div class="text-center mt-8">
+        <p class="text-2xl font-semibold mb-4 text-[#8762D9]">
+            Lets create the most Iconic Meme ever.
+        </p>
+        <hr class="my-6 border-white border-opacity-50 w-3/4 mx-auto">
+        <!-- Botón para copiar la cartera -->
+        <button id="copyWalletButton" class="fixed-button p-4 rounded-full shadow-lg focus:outline-none">
+            0x1234567890abcdef1234567890abcdef12345678
+        </button>
+    </div>
+</section>
+
+
+    <!-- Secciones de la página -->
+    <section id="about" class="section-about h-screen flex items-center justify-center">
+        <h2 class="text-4xl">About Section</h2>
+    </section>
+    <section id="tokenomics" class="section-tokenomics h-screen flex items-center justify-center">
+        <h2 class="text-4xl">Tokenomics Section</h2>
+    </section>
+    <section id="contact" class="section-contact h-screen flex items-center justify-center">
+        <h2 class="text-4xl">Contact Section</h2>
+    </section>
+
+    <!-- Botón flotante en la parte inferior derecha -->
+    <button id="walletButton" class="fixed-button fixed bottom-4 right-4 p-4 rounded-full shadow-lg focus:outline-none">
+        Connect Wallet
+    </button>
+
+    <!-- Modal para conectar la cartera -->
+    <div id="walletModal" class="modal hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+        <div class="modal-box p-6 rounded-lg">
+            <h2 class="text-xl font-bold mb-4">Connect your Wallet</h2>
+            <button id="connectMetaMask" class="btn-primary w-full mb-4">Login with MetaMask</button>
+            <div class="form-control">
+                <label class="label">
+                    <span class="label-text">Amount in ETH</span>
+                </label>
+                <input type="number" placeholder="0.0" class="input input-bordered w-full mb-4" id="ethAmount">
+            </div>
+            <div class="form-control">
+                <label class="label">
+                    <span class="label-text">Amount in USD</span>
+                </label>
+                <input type="number" placeholder="0.0" class="input input-bordered w-full mb-4" id="usdAmount">
+            </div>
+            <div class="form-control">
+                <label class="label">
+                    <span class="label-text">Amount in USDC</span>
+                </label>
+                <input type="number" placeholder="0.0" class="input input-bordered w-full mb-4" id="usdcAmount">
+            </div>
+            <div class="modal-action">
+                <button id="closeModal" class="btn">Close</button>
+                <button id="buyTokens" class="btn-primary">Buy Go Meme</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- DaisyUI necesita incluir al final -->
+    <script src="https://cdn.jsdelivr.net/npm/daisyui@2.14.0/dist/full.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

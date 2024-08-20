@@ -1,0 +1,129 @@
+/* Definición de la fuente personalizada */
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../fonts/Monopoly Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Aplicación de la fuente a todo el cuerpo */
+body {
+    font-family: 'MyCustomFont', sans-serif;
+    background-image: url('../images/theme.png'); /* Ruta relativa a la imagen */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background-color: rgba(248, 250, 254, 0.8); /* #F8FAFE con 80% de opacidad */
+    color: #333;
+}
+
+.navbar .text-2xl {
+    color: #8762D9;
+}
+
+.nav-links a {
+    color: #333;
+}
+
+.nav-links a:hover {
+    color: #DD9AE5;
+}
+
+.btn-primary {
+    background-color: #91BAFF;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #8762D9;
+}
+
+.section-about {
+    background-color: rgba(205, 255, 216, 0.8); /* #CDFFD8 con 80% de opacidad */
+}
+
+.section-tokenomics {
+    background-color: rgba(248, 250, 254, 0.8); /* #F8FAFE con 80% de opacidad */
+}
+
+.section-contact {
+    background-color: rgba(145, 186, 255, 0.8); /* #91BAFF con 80% de opacidad */
+    color: white;
+}
+
+/* Estilo para el botón de copiar */
+.fixed-button {
+    background-color: transparent; /* Fondo transparente */
+    color: #DD9AE5; /* Color del texto */
+    border: 2px solid #DD9AE5; /* Borde del botón */
+    transition: all 0.3s ease; /* Transición suave para el hover */
+    display: flex; /* Flexbox para alinear el icono y el texto */
+    align-items: center; /* Alinear verticalmente */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+}
+
+/* Cambiar tamaño del botón al pasar el ratón */
+.fixed-button:hover {
+    transform: scale(1.05); /* Aumentar el tamaño del botón */
+    border-color: #8762D9; /* Cambiar color del borde al pasar el ratón */
+}
+
+/* Estilo para el icono de copiar dentro del botón */
+.copy-icon {
+    margin-right: 0.5rem; /* Espaciado entre el icono y el texto */
+    vertical-align: middle; /* Alinear verticalmente el icono con el texto */
+}
+
+/* Estilo para la caja del modal */
+.modal-box {
+    background-color: rgba(248, 250, 254, 0.9); /* #F8FAFE con 90% de opacidad */
+}
+
+.modal-box h2 {
+    color: #8762D9;
+}
+
+.modal-box .btn-primary {
+    background-color: #91BAFF;
+    color: #fff;
+}
+
+.modal-box .btn-primary:hover {
+    background-color: #8762D9;
+}
+
+.modal-box .label-text {
+    color: #8762D9;
+}
+
+.modal-action .btn {
+    background-color: rgba(205, 255, 216, 0.8); /* #CDFFD8 con 80% de opacidad */
+    color: #333;
+}
+
+.modal-action .btn:hover {
+    background-color: #91BAFF;
+}
+
+/* Estilo para la sección de introducción */
+.intro-section {
+    background-color: rgba(205, 218, 253, 0.8); /* Color verde pastel con opacidad */
+}
+
+.intro-section img {
+    border: 4px solid #91BAFF; /* Color de borde azul pastel */
+}
+
+.text-content h2 {
+    font-family: 'Comic Sans MS', sans-serif; /* Tipografía divertida para el texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+    color: #8762D9; /* Color del texto */
+    border: 4px solid #8762D9; /* Borde alrededor del texto */
+    padding: 1rem; /* Espaciado interno */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    background-color: rgba(248, 250, 254, 0.7); /* Fondo blanco semi-transparente detrás del texto */
+}
